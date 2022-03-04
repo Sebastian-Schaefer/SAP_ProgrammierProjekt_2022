@@ -1,0 +1,41 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: {
+    typeNamePlural: 'Customers',
+    typeName: 'Customer',
+    title.value: 'Id',
+    description.value: 'Name'
+}
+
+annotate view ZC_01_CUSTOMERTP with
+{
+
+  /* Bereiche */
+  @UI.facet: [{ position: 10,
+                type: #IDENTIFICATION_REFERENCE,
+                label: 'Customer Information' }]
+
+  /* Felder */
+  @UI.identification: [{ position: 10 }]
+  Id;
+  @UI.identification: [{ position: 20 }]
+  Name;
+  //    Form;
+  @UI.identification: [{ position: 30 }]
+  Street;
+  //    Postbox;
+  @UI.identification: [{ position: 40 }]
+  Postcode;
+  @UI.identification: [{ position: 50 }]
+  City;
+  @UI.identification: [{ position: 60 }]
+  Country;
+  //    Region;
+  @UI.identification: [{ position: 70 }]
+  Telephone;
+  //    Custtype;
+  //    Discount;
+  @UI.identification: [{ position: 80 }]
+  Langu;
+  @UI.identification: [{ position: 90 }]
+  Email;
+}

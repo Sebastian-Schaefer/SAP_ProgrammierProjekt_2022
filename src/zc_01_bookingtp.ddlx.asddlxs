@@ -1,0 +1,53 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: {
+    typeNamePlural: 'Bookings',
+    typeName: 'Booking',
+    title.value: 'BookingID'
+}
+
+annotate view ZC_01_BOOKINGTP with
+{
+  /* Bereiche */
+  @UI.facet: [{ position: 10,
+                type: #IDENTIFICATION_REFERENCE,
+                label: 'Booking Information' },
+              { position: 20,
+                type: #IDENTIFICATION_REFERENCE,
+                label: 'Customer',
+                targetElement: '_Customer' }]
+
+  /* Felder */
+  @UI.lineItem: [
+  { position: 10 },
+  { position: 20, type: #FOR_ACTION, dataAction: 'BOPF:CANCEL_BOOKING_N', label: 'Cancel' }
+  ]
+  @UI.identification: [{ position: 10, label: 'Booking Date' }]
+  OrderDate;
+  @UI.lineItem: [{ position: 11 }]
+  @UI.identification: [{ position: 11 }]
+  FlightDate;
+  @UI.lineItem: [{ position: 12 }]
+  @UI.identification: [{ position: 12 }]
+  CarrierID;
+  @UI.lineItem: [{ position: 20 }]
+  BookingID;
+  @UI.lineItem: [{ position: 30 }]
+  @UI.identification: [{ position: 21 }]
+  CustomerID;
+  @UI.lineItem: [{ position: 40 }]
+  @UI.identification: [{ position: 30 }]
+  Luggageweight;
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [{ position: 40, label: 'Flight Class' }]
+  FlightClass;
+  @UI.lineItem: [{ position: 70 }]
+  @UI.identification: [{ position: 50 }]
+  LocalAmount;
+  @UI.identification: [{ position: 61, label: 'Smoker', value: 'Smoker',
+   criticality: 'smoking' } ]
+  smoking;
+  @UI.identification: [{ position: 70 }]
+  Invoice;
+  @UI.identification: [{ position: 09 }]
+  ConnectionID;
+}

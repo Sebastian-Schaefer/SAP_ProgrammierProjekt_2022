@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>Z01BOOKING</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message Class for Booking</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Booking was successfully cancelled</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Booking is already cancelled</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>No carrier for the specified data</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>No connection for the specified data</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>On the specified date the connection is not available</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>The defined airline does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Booking number is already used</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Customer does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Booking Date can not be after Flight Date or current day</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Please only enter following values for Class: &quot;C&quot;, &quot;Y&quot;, &quot;F&quot;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Field Smoker can only be &quot;X&quot; or &quot;&quot;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>LuggageWeight and Amount can not have negative values</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>The connection is not available on the specified flight date</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>For the connection the specified airline is not available</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z01BOOKING</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>Sorry, the connection is already fully booked on your chosen date</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

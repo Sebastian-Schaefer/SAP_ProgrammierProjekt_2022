@@ -1,0 +1,71 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: {
+    typeNamePlural: 'Flights',
+    typeName: 'Flight',
+    title.value: 'ConnectionID',
+    description.value: 'Cityto'
+}
+
+annotate view ZC_01_FLIGHTTP with
+{
+  /* Abschnitt */
+  @UI.facet: [{ position: 10,
+            type: #IDENTIFICATION_REFERENCE,
+            label: 'General Information' },
+          { position: 20,
+            type: #LINEITEM_REFERENCE,
+            label: 'Bookings',
+            targetElement: '_Bookings' }]
+
+
+  /* Felder */
+  @UI.lineItem: [{position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  CarrierID;
+    @UI.lineItem: [{position: 15 }]
+  carrname;
+ 
+  @UI.lineItem: [{position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  
+  ConnectionID;
+  @UI.selectionField: [{position: 10 }]
+  @UI.lineItem: [{position: 30 }]
+  @UI.identification: [{ position: 30 }]
+  FlightDate;
+  @UI.identification: [{ position: 40 }]
+  Deptime;
+  @UI.identification: [{ position: 50 }]
+  Arrtime;
+  @UI.identification: [{ position: 60 }]
+  Period;
+  @UI.identification: [{ position: 70, label: 'Depart. Country' }]
+  Countryfr;
+  @UI.selectionField: [{position: 20 }]
+  @UI.identification: [{ position: 80  }]
+  Cityfrom;
+  @UI.lineItem: [{position: 40 }]
+  @UI.identification: [{ position: 90 }]
+  Airpfrom;
+  @UI.identification: [{ position: 100, label: 'Arrival Country' }]
+  Countryto;
+  @UI.selectionField: [{position: 30 }]
+  @UI.identification: [{ position: 110 }]
+  Cityto;
+  @UI.lineItem: [{position: 50 }]
+  @UI.identification: [{ position: 120 }]
+  Airpto;
+  @UI.selectionField: [{position: 40 }]
+  @UI.lineItem: [{position: 60, label: 'Price' }]
+  @UI.identification: [{ position: 130, label: 'Price' }]
+  Price;
+  @UI.identification: [{ position: 140 }]
+  Planetype;
+  @UI.identification: [{ position: 150 }]
+  Seatsmax;
+  @UI.identification: [{ position: 160 }]
+  Seatsoccupied;
+  @UI.identification: [{ position: 170, label: 'Occupancy Rate (%)'}]
+  @UI.lineItem: [{position: 70, label: 'Occupancy Rate (%)'}]
+  OccupancyRate;
+}

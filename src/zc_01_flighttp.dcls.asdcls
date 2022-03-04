@@ -1,0 +1,7 @@
+@EndUserText.label: 'Flight'
+@MappingRole: true
+define role ZC_01_FLIGHTTP {
+ grant select on ZC_01_FLIGHTTP
+  where (CarrierID) = aspect pfcg_auth(S_CARRID, CARRID, ACTVT = '03');
+                        
+}
